@@ -1,17 +1,18 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <main className="mx-w-[1600px] mx-auto max-w-full ">
         <div className="top-nav py-[10px] bg-[background:#0A4264] px-[95px] relative">
-          <a className=" text-center w-full items-center inline-flex font-[600] leading-[24px] z-10 relative justify-center group" href="#">
+          <Link className=" text-center w-full items-center inline-flex font-[600] leading-[24px] z-10 relative justify-center group" href="#">
             <span className="text-[16px] text-white relative">Socure Unveils AI-Powered Global Watchlist Solution
               <span className="absolute top-[calc(50%-4px)] pl-[5px] group-hover:ml-[5px] transition-all duration-400"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 5H11M11 5L7.25 1.25M11 5L7.25 8.75" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg></span>
             </span>
-          </a>
+          </Link>
           <Image className="absolute top-0 left-0 w-full z-0"
             src="/Keylines.png"
             alt="arrow"
@@ -21,11 +22,11 @@ export default function Home() {
           />
         </div>
         <div className="secondary-nav py-[25px] bg-white">
-          <div className="container mx-w-[1600px] px-[80px] mx-auto">
+          <div className="container">
             <div className="wrapper w-full flex flex-wrap items-center justify-between">
               <div className="left-nav flex flex-wrap items-center">
-                <div className="logo mr-[40px]">
-                  <a href="#"><svg width="130" height="50" viewBox="0 0 130 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="logo mr-[40px] max-2xl:mr-[20px]">
+                  <Link href="#"><svg width="130" height="50" viewBox="0 0 130 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 33.3337L16.6751 50.0004L33.3503 33.3337L16.6751 16.667L0 33.3337Z" fill="#FF8200" />
                     <path d="M16.6751 0L0 16.6667L16.6751 33.3335L33.3503 16.6667L16.6751 0Z" fill="#FF6900" />
                     <path d="M41.4604 30.774L43.6789 28.1146C45.2155 29.3805 46.8248 30.182 48.7705 30.182C50.3071 30.182 51.2345 29.5718 51.2345 28.5699V28.5244C51.2345 27.5772 50.6526 27.0854 47.7977 26.3568C44.3608 25.4825 42.1423 24.5262 42.1423 21.1473V21.1018C42.1423 18.0052 44.6245 15.9561 48.1159 15.9561C50.6072 15.9561 52.7257 16.7393 54.4532 18.1236L52.4984 20.947C50.989 19.8996 49.4979 19.2621 48.0614 19.2621C46.6248 19.2621 45.8701 19.9178 45.8701 20.7466V20.7921C45.8701 21.9124 46.5975 22.2767 49.5525 23.0326C53.0166 23.9342 54.9623 25.182 54.9623 28.151V28.1965C54.9623 31.5845 52.3802 33.488 48.6978 33.488C46.1156 33.488 43.5062 32.5863 41.4604 30.7557" fill="#1C1C4C" />
@@ -37,15 +38,15 @@ export default function Home() {
                     <path d="M16.6749 33.3233H33.3501L25.0034 24.999L16.6749 33.3233Z" fill="#1C1C4C" />
                     <path d="M126.799 31.0205V31.4668H126.108V33.5251H125.599V31.4668H124.908V31.0205H126.799Z" fill="#1C1C4C" />
                     <path d="M130 33.5251H129.481L129.3 31.9677L128.69 33.2427H128.29L127.672 31.9677L127.49 33.5251H126.972L127.281 31.0205H127.708L128.481 32.669L129.245 31.0205H129.681L129.991 33.5251H130Z" fill="#1C1C4C" />
-                  </svg></a>
+                  </svg></Link>
                 </div>
                 <div className="nav-links">
-                  <ul className="flex flex-wrap">
-                    <li className="mr-[40px]"><a className="text-[20px] xl:text-[18px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">solution</a></li>
-                    <li className="mr-[40px]"><a className="text-[20px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">Products</a></li>
-                    <li className="mr-[40px]"><a className="text-[20px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">Public Sector</a></li>
-                    <li className="mr-[40px]"><a className="text-[20px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">Resources</a></li>
-                    <li className="mr-[40px]"><a className="text-[20px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">Company</a></li>
+                  <ul className="flex flex-wrap max-xl:hidden">
+                    <li className="mr-[40px] max-2xl:mr-[20px]"><Link className="text-[20px] max-2xl:text-[18px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">solution</Link></li>
+                    <li className="mr-[40px] max-2xl:mr-[20px]"><Link className="text-[20px] max-2xl:text-[18px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">Products</Link></li>
+                    <li className="mr-[40px] max-2xl:mr-[20px]"><Link className="text-[20px] max-2xl:text-[18px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">Public Sector</Link></li>
+                    <li className="mr-[40px] max-2xl:mr-[20px]"><Link className="text-[20px] max-2xl:text-[18px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">Resources</Link></li>
+                    <li className="max-2xl:mr-[20px]"><Link className="text-[20px] max-2xl:text-[18px] font-[600] leading-[19.2px] text-[#0A4264] hover:text-[#FF6900] transition-all capitalize" href="#">Company</Link></li>
                   </ul>
                 </div>
                 <div className=""></div>
@@ -53,27 +54,107 @@ export default function Home() {
               <div className="right-nav flex flex-wrap items-center">
                 <div className="user-icon">
                   <div className="icon-wrap">
-                    <a href="#">
-                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg" className="group">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M8.59375 9.875C8.59375 8.839 9.0053 7.84543 9.73786 7.11286C10.4704 6.3803 11.464 5.96875 12.5 5.96875C13.536 5.96875 14.5296 6.3803 15.2621 7.11286C15.9947 7.84543 16.4062 8.839 16.4062 9.875C16.4062 10.911 15.9947 11.9046 15.2621 12.6371C14.5296 13.3697 13.536 13.7812 12.5 13.7812C11.464 13.7812 10.4704 13.3697 9.73786 12.6371C9.0053 11.9046 8.59375 10.911 8.59375 9.875ZM12.5 7.53125C11.8784 7.53125 11.2823 7.77818 10.8427 8.21772C10.4032 8.65726 10.1562 9.2534 10.1562 9.875C10.1562 10.4966 10.4032 11.0927 10.8427 11.5323C11.2823 11.9718 11.8784 12.2188 12.5 12.2188C13.1216 12.2188 13.7177 11.9718 14.1573 11.5323C14.5968 11.0927 14.8438 10.4966 14.8438 9.875C14.8438 9.2534 14.5968 8.65726 14.1573 8.21772C13.7177 7.77818 13.1216 7.53125 12.5 7.53125Z" fill="#0A4264" className="group-hover:fill-[#FF6900] transition-all duration-400"/>
-                      <path fillRule="evenodd" clipRule="evenodd" d="M1.30078 13.0002C1.30078 6.81579 6.31432 1.80225 12.4987 1.80225C18.6831 1.80225 23.6966 6.81579 23.6966 13.0002C23.6966 19.1845 18.6831 24.1981 12.4987 24.1981C6.31432 24.1981 1.30078 19.1845 1.30078 13.0002ZM12.4987 3.36475C10.5953 3.36483 8.73448 3.92869 7.15114 4.98517C5.5678 6.04165 4.33285 7.54342 3.60209 9.301C2.87134 11.0586 2.67752 12.9932 3.04509 14.8609C3.41266 16.7285 4.32516 18.4454 5.66745 19.795C5.85495 18.7814 6.22474 17.8262 6.96537 17.0575C8.07474 15.9075 9.84661 15.3439 12.4987 15.3439C15.1508 15.3439 16.9227 15.9075 18.031 17.0575C18.7727 17.8262 19.1414 18.7825 19.33 19.796C20.6726 18.4465 21.5854 16.7295 21.9532 14.8617C22.321 12.9939 22.1272 11.059 21.3964 9.3012C20.6656 7.54341 19.4305 6.04147 17.847 4.98494C16.2634 3.92841 14.4024 3.36463 12.4987 3.36475ZM17.9091 20.9741C17.8029 19.7116 17.5289 18.7866 16.907 18.1418C16.2299 17.4408 14.9768 16.9064 12.4987 16.9064C10.0206 16.9064 8.76745 17.4408 8.09037 18.1418C7.46849 18.7877 7.19453 19.7116 7.08828 20.9752C8.68368 22.0603 10.5693 22.6389 12.4987 22.6356C14.4282 22.6386 16.3138 22.0595 17.9091 20.9741Z" fill="#0A4264"  className="group-hover:fill-[#FF6900] transition-all duration-400"/>
-                    </svg>
-                    </a>
+                    <Link href="#">
+                      <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg" className="group">
+                        <path fillRule="evenodd" clipRule="evenodd" d="M8.59375 9.875C8.59375 8.839 9.0053 7.84543 9.73786 7.11286C10.4704 6.3803 11.464 5.96875 12.5 5.96875C13.536 5.96875 14.5296 6.3803 15.2621 7.11286C15.9947 7.84543 16.4062 8.839 16.4062 9.875C16.4062 10.911 15.9947 11.9046 15.2621 12.6371C14.5296 13.3697 13.536 13.7812 12.5 13.7812C11.464 13.7812 10.4704 13.3697 9.73786 12.6371C9.0053 11.9046 8.59375 10.911 8.59375 9.875ZM12.5 7.53125C11.8784 7.53125 11.2823 7.77818 10.8427 8.21772C10.4032 8.65726 10.1562 9.2534 10.1562 9.875C10.1562 10.4966 10.4032 11.0927 10.8427 11.5323C11.2823 11.9718 11.8784 12.2188 12.5 12.2188C13.1216 12.2188 13.7177 11.9718 14.1573 11.5323C14.5968 11.0927 14.8438 10.4966 14.8438 9.875C14.8438 9.2534 14.5968 8.65726 14.1573 8.21772C13.7177 7.77818 13.1216 7.53125 12.5 7.53125Z" fill="#0A4264" className="group-hover:fill-[#FF6900] transition-all duration-400" />
+                        <path fillRule="evenodd" clipRule="evenodd" d="M1.30078 13.0002C1.30078 6.81579 6.31432 1.80225 12.4987 1.80225C18.6831 1.80225 23.6966 6.81579 23.6966 13.0002C23.6966 19.1845 18.6831 24.1981 12.4987 24.1981C6.31432 24.1981 1.30078 19.1845 1.30078 13.0002ZM12.4987 3.36475C10.5953 3.36483 8.73448 3.92869 7.15114 4.98517C5.5678 6.04165 4.33285 7.54342 3.60209 9.301C2.87134 11.0586 2.67752 12.9932 3.04509 14.8609C3.41266 16.7285 4.32516 18.4454 5.66745 19.795C5.85495 18.7814 6.22474 17.8262 6.96537 17.0575C8.07474 15.9075 9.84661 15.3439 12.4987 15.3439C15.1508 15.3439 16.9227 15.9075 18.031 17.0575C18.7727 17.8262 19.1414 18.7825 19.33 19.796C20.6726 18.4465 21.5854 16.7295 21.9532 14.8617C22.321 12.9939 22.1272 11.059 21.3964 9.3012C20.6656 7.54341 19.4305 6.04147 17.847 4.98494C16.2634 3.92841 14.4024 3.36463 12.4987 3.36475ZM17.9091 20.9741C17.8029 19.7116 17.5289 18.7866 16.907 18.1418C16.2299 17.4408 14.9768 16.9064 12.4987 16.9064C10.0206 16.9064 8.76745 17.4408 8.09037 18.1418C7.46849 18.7877 7.19453 19.7116 7.08828 20.9752C8.68368 22.0603 10.5693 22.6389 12.4987 22.6356C14.4282 22.6386 16.3138 22.0595 17.9091 20.9741Z" fill="#0A4264" className="group-hover:fill-[#FF6900] transition-all duration-400" />
+                      </svg>
+                    </Link>
                   </div>
                 </div>
-                <div className="btn-wrap flex flex-wrap items-center">
+                <div className="btn-wrap flex flex-wrap items-center max-xl:hidden">
                   <div className="btn-transparent ml-[10px]">
-                    <a className="text-[#0A4264]  bg-white text-[16px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] px-[20px] rounded-[24.5px] border-[1.5px] ml-[10px]  hover:text-[#FF6900]" href="#"><span>Talk to an Expert</span></a>
+                    <Link className="text-[#0A4264]  bg-white text-[16px] max-2xl:text-[14px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] max-2xl:py-[12px] px-[20px] max-2xl:px-[15px] rounded-[24.5px] border-[1.5px] ml-[10px]  hover:text-[#FF6900]" href="#"><span>Talk to an Expert</span></Link>
                   </div>
                   <div className="btn-transparent ml-[10px]">
-                    <a className="text-[#0A4264] bg-[#FF6900] text-[16px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] px-[20px] rounded-[24.5px] border-[1.5px] ml-[10px] hover:bg-[#d76826] border-[#FF6900] hover:border-[#d76826]" href="#"><span>Get a Demo</span></a>
+                    <Link className="text-[#0A4264] bg-[#FF6900] text-[16px] max-2xl:text-[14px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] max-2xl:py-[12px] px-[20px] max-2xl:px-[15px] rounded-[24.5px] border-[1.5px] ml-[10px] hover:bg-[#d76826] border-[#FF6900] hover:border-[#d76826]" href="#"><span>Get a Demo</span></Link>
                   </div>
                 </div>
-              </div> 
+                <div className="hamburger ml-[20px] hidden max-xl:block">
+                  <button className="w-[35px] h-[25px] relative cursor-pointer" data-collapse-toggle="navbar-hamburger" type="button" aria-controls="navbar-hamburger" aria-expanded="false">
+                    <ul className="">
+                      <li className="absolute top-0 h-0.5 w-full bg-black transition-all duration-300 ease-in-out "></li>
+                      <li className="absolute top-[11px] h-0.5 w-full bg-black transition-all duration-300 ease-in-out "></li>
+                      <li className="absolute top-[22px] h-0.5 w-full bg-black transition-all duration-300 ease-in-out "></li>
+                    </ul>
+                  </button>
+
+                  <div className="hidden w-full" id="navbar-hamburger">
+                    <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                      <li>
+                        <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded-sm dark:bg-blue-600" aria-current="page">Home</a>
+                      </li>
+                      <li>
+                        <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Services</a>
+                      </li>
+                      <li>
+                        <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Pricing</a>
+                      </li>
+                      <li>
+                        <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <section className="banner bg-white">
+          <div className="container">
+            <div className="wrapper flex flex-wrap">
+              <div className="col-left w-1/2">
+                <span className="text-[16px] max-lg-[14px] text-[#FF6900] leading-[26px] font-[700] uppercase mb-[20px]">banking</span>
+                <h1 className="text-[#0A4264] text-[90px] max-2xl:text-[78px] max-xl:text-[66px] max-lg-[54px] max-md:text-[42px] max-sm:text-[30px] leading-[90px] normal-case mb-[20px]">Identify risk and approve more customers</h1>
+                <p className="text-[20px] max-lg-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px] mb-[30px]">Power a seamless customer experience and confident compliance with AI-driven identity verification and fraud prevention solutions that deliver unmatched accuracy.</p>
+                <div className="btn-wrap flex flex-wrap items-center max-xl:hidden">
+                  <div className="btn-transparent">
+                    <Link className="text-[#0A4264] bg-[#FF6900] text-[16px] max-2xl:text-[14px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] max-2xl:py-[12px] px-[20px] max-2xl:px-[15px] rounded-[24.5px] border-[1.5px]  hover:bg-[#d76826] border-[#FF6900] hover:border-[#d76826]" href="#"><span>Talk to an Expert</span></Link>
+                  </div>
+                  <div className="btn-transparent ml-[10px]">
+                    <Link className="text-[#0A4264]  bg-white text-[16px] max-2xl:text-[14px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] max-2xl:py-[12px] px-[20px] max-2xl:px-[15px] rounded-[24.5px] border-[1.5px] ml-[10px]  hover:text-[#FF6900]" href="#"><span>Get a Demo</span></Link>
+                  </div>
+                </div>
+                <div className="logo-wrapper flex flex-wrap mt-[100px] mb-[50px] align-middle">
+                  <div className="icon-wrap">
+                    <Image className="w-[155px] h-[87px] object-contain"
+                      src="/Betterment.png"
+                      width={200}
+                      height={200}
+                      object-contain
+                    />
+                  </div>
+                  <div className="icon-wrap">
+                  <Image className="w-[155px] h-[87px] object-contain"
+                      src="/Citi.png"
+                      width={200}
+                      height={200}
+                    />
+                  </div>
+                  <div className="icon-wrap">
+                  <Image className="w-[155px] h-[87px] object-contain"
+                      src="/chime.png"
+                      width={500}
+                      height={500}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-right w-1/2">
+                <div className="icon-wrap">
+                  <Image className="w-[630px] object-contain"
+                    src="/banner-img.png"
+                    width={1000}
+                    height={1000}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
 }
+
+
