@@ -100,9 +100,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section className="banner bg-white">
+        <section className="banner tablet:bg-black bg-white">
           <div className="container">
-            <div className="wrapper flex flex-wrap">
+            <div className="wrapper flex desktop:flex-wrap">
               <div className="col-left w-1/2">
                 <span className="text-[16px] max-lg-[14px] text-[#FF6900] leading-[26px] font-[700] uppercase mb-[20px]">banking</span>
                 <h1 className="text-[#0A4264] text-[90px] max-2xl:text-[78px] max-xl:text-[66px] max-lg-[54px] max-md:text-[42px] max-sm:text-[30px] leading-[90px] normal-case mb-[20px]">Identify risk and approve more customers</h1>
@@ -117,25 +117,27 @@ export default function Home() {
                 </div>
                 <div className="logo-wrapper flex flex-wrap mt-[100px] mb-[50px] align-middle">
                   <div className="icon-wrap">
-                    <Image className="w-[155px] h-[87px] object-contain"
+                    <Image className="w-[155px] h-[87px]"
                       src="/Betterment.png"
                       width={200}
                       height={200}
-                      object-contain
+                      alt={'bettermnet'}
                     />
                   </div>
                   <div className="icon-wrap">
-                  <Image className="w-[155px] h-[87px] object-contain"
+                    <Image className="w-[155px] h-[87px] object-contain"
                       src="/Citi.png"
                       width={200}
                       height={200}
+                      alt={"chime"}
                     />
                   </div>
                   <div className="icon-wrap">
-                  <Image className="w-[155px] h-[87px] object-contain"
+                    <Image className="w-[155px] h-[87px] object-contain"
                       src="/chime.png"
                       width={500}
                       height={500}
+                      alt={"chime"}
                     />
                   </div>
                 </div>
@@ -146,8 +148,88 @@ export default function Home() {
                     src="/banner-img.png"
                     width={1000}
                     height={1000}
+                    alt={"banner"}
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="stick-nav bg-white ">
+          <div className="container">
+            <ul className="flex flex-wrap border-b-[1px] border-[#9FA9AF] py-[20px]">
+              <li className="mr-[50px] group"><Link className="text-[20px] font-[400] leading-[150%] text-[#0A4264]  group-hover:font-[600] transition-all ease-in-out duration-400 group-hover:border-b-3 border-[#FF6900]" href="#">Overview</Link></li>
+              <li className="mr-[50px] group"><Link className="text-[20px] font-[400] leading-[150%] text-[#0A4264]  group-hover:font-[600] transition-all ease-in-out duration-400 group-hover:border-b-3 border-[#FF6900]" href="#">How We Help</Link></li>
+              <li className="mr-[50px] group"><Link className="text-[20px] font-[400] leading-[150%] text-[#0A4264]  group-hover:font-[600] transition-all ease-in-out duration-400 group-hover:border-b-3 border-[#FF6900]" href="#">Resources</Link></li>
+            </ul>
+          </div>
+        </section>
+        <section className="intro py-[50px] bg-white">
+          <div className="container">
+            <div className="wrapper">
+              <span className="text-[16px] max-lg-[14px] text-[#FF6900] leading-[26px] font-[700] uppercase mb-[20px] text-center w-full block">overview</span>
+              <p className="text-[20px] max-lg-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px] mb-[30px] max-w-[930px] text-center w-full mx-auto">Banks face mounting pressure from sophisticated fraud schemes and stricter regulations, while legacy verification systems create friction and security gaps.
+                The rise of synthetic identities, account takeover attacks, and complex compliance requirements like sanctions screening demands a more sophisticated approach to risk management.</p>
+              <div className="flex flex-wrap align-middle">
+                <div className="col-left w-1/4">
+                  <h4 className="text-[30px] text-[#0A4264] font-[600]">Opportunities</h4>
+                </div>
+                <div className="col-right w-3/4">
+                  <p className="text-[20px] max-lg-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px]">Achieve rigorous compliance, outsmart sophisticated fraud, and streamline operations — all while delivering seamless, customer-centric experiences.</p>
+                </div>
+              </div>
+              <div className="statics-wrapper flex flex-wrap justify-between mt-[30px]">
+                <div className="text-center">
+                  <span className="block text-[90px] leading-[100%] text-[#FF6900] pb-[20px] border-b-[1px] border-[#9FA9AF] mx-[10px]">99%</span>
+                  <p className="block mt-[20px] text-[16px] leading-[26px] uppercase text-[#0A4264] font-[700]">verification of mainstream populations</p>
+                </div>
+                <div className="text-center">
+                  <span className="block text-[90px] leading-[100%] text-[#FF6900] pb-[20px] border-b-[1px] border-[#9FA9AF] mx-[10px]">99%</span>
+                  <p className="block mt-[20px] text-[16px] leading-[26px] uppercase text-[#0A4264] font-[700]">verification of mainstream populations</p>
+                </div>
+                <div className="text-center">
+                  <span className="block text-[90px] leading-[100%] text-[#FF6900] pb-[20px] border-b-[1px] border-[#9FA9AF] mx-[10px]">99%</span>
+                  <p className="block mt-[20px] text-[16px] leading-[26px] uppercase text-[#0A4264] font-[700]">verification of mainstream populations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="text-with-image px-[50px] bg-white">
+          <div className="container">
+            <div className="intro">
+              <span className="text-[16px] max-lg-[14px] text-[#FF6900] leading-[26px] font-[700] uppercase mb-[20px] text-center w-full mx-auto block">HOW WE HELP</span>
+            </div>
+            <div className="wrapper flex flex-wrap">
+              <div className="text-wrap w-1/2">
+                <h3 className="text-[#FF6900] text-[50px] max-2xl:text-[46px] max-xl:text-[42px] max-lg-[38px] max-md:text-[34px] max-sm:text-[30px] mb-[20px]">Accelerate verification across your customer journey</h3>
+                <p className="text-[20px] max-lg-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px] mb-[30px]">Gain unmatched accuracy and inclusivity through advanced AI and machine learning</p>
+                <p className="text-[20px] max-lg-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px] mb-[30px]">Make real-time trust and risk decisions — all from a single, seamless platform</p>
+                <div className="related-content">
+                  <h4 className="text-[30px]  max-xl:text-[28px] max-lg-[26px] max-md:text-[24px] max-sm:text-[22px]leading-[100%] font-[600] text-[#0A4264] mb-[20px]">Related Products</h4>
+                  <Link href='#' className="text-[16px] text-[#0A4264] leading-[120%] flex justify-between border-t-[1px] border-[#E5EAEB] py-[15px] align-center"><p><span className="font-[600]">Socure Verify</span> for CIP/KYC compliance</p>
+                    <span><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#FF6900" />
+                      <path d="M10 15H20M20 15L16.25 11.25M20 15L16.25 18.75" stroke="#0A4264" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    </span>
+                  </Link>
+                  <Link href='#' className="text-[16px] text-[#0A4264] leading-[120%] flex justify-between  border-t-[1px] border-[#E5EAEB] py-[15px] align-center"><p><span className="font-[600]">Global Watchlist Screening</span> with Monitoring for sanctions screening, PEP, and adverse media risk management</p>
+                    <span><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#FF6900" />
+                      <path d="M10 15H20M20 15L16.25 11.25M20 15L16.25 18.75" stroke="#0A4264" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <div className="img-wrap w-1/2">
+                <Image
+                  src="/accelerate.png"
+                  width={1000}
+                  height={1000}
+                  alt={"accelarate"}
+                />
               </div>
             </div>
           </div>
