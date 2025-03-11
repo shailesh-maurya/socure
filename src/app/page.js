@@ -482,7 +482,7 @@ export default function Home() {
         <section className="footer bg-[#62829D] py-[50px]">
           <div className="container">
             <div className="wrapper flex flex-wrap">
-              <div className="col-left w-1/4">
+              <div className="col-left w-1/4 pr-[25px]">
                 <div className="logo mb-[50px]">
                   <Link href="#">
                     <svg width="176" height="69" viewBox="0 0 176 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -510,34 +510,383 @@ export default function Home() {
                 </div>
                 <p className="text-[16px] text-white font-[400] mb-[30px]">Socure is the leading platform for digital identity verification and trust. Its predictive analytics platform applies artificial intelligence and machine learning technology with trusted online/offline data intelligence from email, phone address, IP, device, velocity, and the broader internet to verify identities in real time.</p>
                 <div className="btn-transparent">
-                  <Link className="text-[#0A4264] bg-[#FF6900] text-[16px] max-2xl:text-[14px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] max-2xl:py-[12px] px-[20px] max-2xl:px-[15px] rounded-[24.5px] border-[1.5px]  hover:bg-[#d76826] border-[#FF6900] hover:border-[#d76826]" href="#"><span>Get a Demo</span></Link>
+                  <Link className="text-[#0A4264] bg-[#FF6900] text-[16px] max-2xl:text-[14px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] max-2xl:py-[12px] px-[20px] max-2xl:px-[15px] rounded-[24.5px] border-[1.5px]  hover:bg-[#d76826] border-[#FF6900] hover:border-[#d76826]" href="#"><span>Contact us</span></Link>
                 </div>
                 <div className="social-icon flex flex-wrap mt-[30px]">
-                  <Link href="#" className="mr-[10px]"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="18.375" cy="19.125" r="16.125" fill="white" />
+                  <Link href="#" className="mr-[10px] group"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18.375" cy="19.125" r="16.125" fill="white" className="group-hover:fill-[#FF6900] transition-all ease-in-out duration-300" />
                     <path d="M13.6351 27.74H10.0096V16.2472H13.6351V27.74ZM11.8198 14.6545C11.4085 14.6522 11.0072 14.5284 10.6664 14.2987C10.3256 14.0689 10.0606 13.7436 9.90494 13.3637C9.74924 12.9839 9.70979 12.5665 9.79156 12.1643C9.87333 11.762 10.0727 11.393 10.3644 11.1037C10.6561 10.8144 11.0272 10.6179 11.4308 10.5389C11.8343 10.4598 12.2523 10.5019 12.6319 10.6597C13.0116 10.8175 13.3358 11.084 13.5639 11.4256C13.7919 11.7672 13.9134 12.1685 13.913 12.5789C13.9169 12.8537 13.8653 13.1265 13.7613 13.3809C13.6573 13.6354 13.5031 13.8663 13.3077 14.06C13.1124 14.2537 12.88 14.4062 12.6244 14.5083C12.3687 14.6104 12.0951 14.6602 11.8198 14.6545ZM26.9983 27.75H23.3745V21.4713C23.3745 19.6197 22.5858 19.0481 21.5676 19.0481C20.4925 19.0481 19.4375 19.857 19.4375 21.5181V27.75H15.812V16.2555H19.2985V17.8482H19.3454C19.6954 17.1413 20.9212 15.933 22.7917 15.933C24.8147 15.933 27 17.1313 27 20.6408L26.9983 27.75Z" fill="#0A4264" />
                   </svg>
                   </Link>
-                  <Link href="#" className="mr-[20px]"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="18.375" cy="19.125" r="16.125" fill="white" />
+                  <Link href="#" className="mr-[20px] group"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18.375" cy="19.125" r="16.125" fill="white" className="group-hover:fill-[#FF6900] transition-all ease-in-out duration-300" />
                     <path d="M23.9261 11.25H26.6862L20.6561 17.9215L27.75 27H22.1956L17.8451 21.494L12.8672 27H10.1054L16.5552 19.864L9.75 11.25H15.4455L19.3779 16.2827L23.9261 11.25ZM22.9573 25.4008H24.4868L14.6144 12.7652H12.9732L22.9573 25.4008Z" fill="#0A4264" />
                   </svg>
                   </Link>
-                  <Link href="#" className="mr-[20px]"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="18.375" cy="19.125" r="16.125" fill="white" />
+                  <Link href="#" className="mr-[20px] group"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18.375" cy="19.125" r="16.125" fill="white" className="group-hover:fill-[#FF6900] transition-all ease-in-out duration-300" />
                     <path d="M23.8654 24.9794L24.5651 20.8034H20.1884V18.0947C20.1884 16.9522 20.7999 15.8374 22.7601 15.8374H24.75V12.2822C24.75 12.2822 22.9441 12 21.2175 12C17.6129 12 15.2568 14 15.2568 17.6206V20.8034H11.25V24.9794H15.2568V35.0745C16.8907 35.3085 18.5545 35.3085 20.1884 35.0745V24.9794H23.8654Z" fill="#0A4264" />
                   </svg>
                   </Link>
-                  <Link href="#">
+                  <Link href="#" className="group">
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="18.375" cy="18.375" r="16.125" fill="white" />
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M26.6759 12.9727C26.9511 13.2552 27.1488 13.6066 27.2491 13.9916C27.62 15.4126 27.62 18.376 27.62 18.376C27.62 18.376 27.62 21.3393 27.2491 22.7603C27.1488 23.1453 26.9511 23.4967 26.6759 23.7793C26.4007 24.0619 26.0575 24.2658 25.6808 24.3705C24.2939 24.751 18.7504 24.751 18.7504 24.751C18.7504 24.751 13.2069 24.751 11.8201 24.3705C11.4433 24.2658 11.1002 24.0619 10.8249 23.7793C10.5497 23.4967 10.3521 23.1453 10.2518 22.7603C9.88086 21.3393 9.88086 18.376 9.88086 18.376C9.88086 18.376 9.88086 15.4126 10.2518 13.9916C10.3521 13.6066 10.5497 13.2552 10.8249 12.9727C11.1002 12.6901 11.4433 12.4862 11.8201 12.3814C13.2069 12.001 18.7504 12.001 18.7504 12.001C18.7504 12.001 24.2939 12.001 25.6808 12.3814C26.0575 12.4862 26.4007 12.6901 26.6759 12.9727ZM21.5222 18.3764L16.533 15.8818V20.871L21.5222 18.3764Z" fill="#0A4264" />
+                      <circle cx="18.375" cy="18.375" r="16.125" fill="white" className="group-hover:fill-[#FF6900] transition-all ease-in-out duration-300" />
+                      <path fillRule="evenodd" clipRule="evenodd" d="M26.6759 12.9727C26.9511 13.2552 27.1488 13.6066 27.2491 13.9916C27.62 15.4126 27.62 18.376 27.62 18.376C27.62 18.376 27.62 21.3393 27.2491 22.7603C27.1488 23.1453 26.9511 23.4967 26.6759 23.7793C26.4007 24.0619 26.0575 24.2658 25.6808 24.3705C24.2939 24.751 18.7504 24.751 18.7504 24.751C18.7504 24.751 13.2069 24.751 11.8201 24.3705C11.4433 24.2658 11.1002 24.0619 10.8249 23.7793C10.5497 23.4967 10.3521 23.1453 10.2518 22.7603C9.88086 21.3393 9.88086 18.376 9.88086 18.376C9.88086 18.376 9.88086 15.4126 10.2518 13.9916C10.3521 13.6066 10.5497 13.2552 10.8249 12.9727C11.1002 12.6901 11.4433 12.4862 11.8201 12.3814C13.2069 12.001 18.7504 12.001 18.7504 12.001C18.7504 12.001 24.2939 12.001 25.6808 12.3814C26.0575 12.4862 26.4007 12.6901 26.6759 12.9727ZM21.5222 18.3764L16.533 15.8818V20.871L21.5222 18.3764Z" fill="#0A4264" />
                     </svg>
 
                   </Link>
                 </div>
               </div>
+              <div className="col-right w-3/4 flex flex-wrap">
+                <div className="column w-[calc(25%-10px)] mx-[5px]">
+                  <h5 className="text-[24px] text-white leading-[140%] capitalize border-b-[1px] border-white pb-[5px] mx-[10px]">Solutions</h5>
+                  <ul className="">
+                    <li className="mb-[10px]">
+                      <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Use Cases</h5>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">New Account</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Compliance</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Bank Account Verification</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Call Center</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Account Takeover Prevention</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Login/ Authentication</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Payment fraud protection</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Portfolio screening</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Monitoring and alerts</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Industries</h5>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Financial Services</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">eCommerce & Marketplaces</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Social & Dating</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Gig Economy</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Online Gaming</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Crypto</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Workforce</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Telco</p>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="column w-[calc(25%-10px)] mx-[5px]">
+                  <h5 className="text-[24px] text-white leading-[140%] capitalize border-b-[1px] border-white pb-[5px] mx-[10px]">Products</h5>
+                  <ul className="">
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Orchestration</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Fraud & Risk </h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Sigma Synthetic Fraud</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Sigma Identity Fraud</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Bank Account Verification</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Email RiskScore</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Address RiskScore</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Digital Intelligence</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Alert List</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Portfolio scrub</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Phone RiskScore</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Sigma First-Party Fraud</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Compliance </h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Verify/Verify+</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">eCBSV</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline-block hover:border-b-[1px] hoover:border-white">Global Watchlist Screening with Monitoring</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Control center</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Portfolio scrub</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Deceased check</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Case management</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">ID + Biometric Verification</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Predictive DocV </p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#" className="">
+                        <p className="text-[16px] text-white leading-[150%] font-[400] mx-[10px] inline hover:border-b-[1px] hoover:border-white">Selfie reverification</p>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Account Intelligence</h5>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="column w-[calc(25%-10px)] mx-[5px]">
+                  <h5 className="text-[24px] text-white leading-[140%] capitalize border-b-[1px] border-white pb-[5px] mx-[10px]">Public Sector</h5>
+                  <ul className="">
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Federal</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">State</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Local</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Higher Education</h5>
+                      </Link>
+                    </li>
+                  </ul>
+                  <h5 className="text-[24px] text-white leading-[140%] capitalize border-b-[1px] border-white pb-[5px] mx-[10px]">Innovation</h5>
+                  <ul>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Socure ID+ Platform</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Identity Graph</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">AI</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Security & Governance</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Use Cases</h5>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="column w-[calc(25%-10px)] mx-[5px]">
+                  <h5 className="text-[24px] text-white leading-[140%] capitalize border-b-[1px] border-white pb-[5px] mx-[10px]">Resources</h5>
+                  <ul className="">
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px] hover:underline">Blogs</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px] hover:underline">Case Studies</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px] hover:underline">Glossary</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px] hover:underline">Reports</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px] hover:underline">Webinars</h5>
+                      </Link>
+                    </li>
+                  </ul>
+                  <h5 className="text-[24px] text-white leading-[140%] capitalize border-b-[1px] border-white pb-[5px] mx-[10px] hover:underline">Company</h5>
+                  <ul>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Customers</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Partners</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">News & Press</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Events</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Use Cases</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Careers</h5>
+                      </Link>
+                    </li>
+                    <li className="mb-[10px]">
+                      <Link href="#">
+                        <h5 className="text-[20px] text-white leading-[150%] my-[10px] font-[600] mx-[10px]">Contact Us</h5>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+        <section className="footer-nav bg-[#0A4264]">
+          <div className="container">
+
           </div>
         </section>
       </main>
