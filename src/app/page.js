@@ -7,7 +7,7 @@ export default function Home() {
       <main className="mx-w-[1600px] mx-auto max-w-full relative">
         <div className="top-nav py-[10px] bg-[background:#0A4264] px-[95px] relative">
           <Link className=" text-center w-full items-center inline-flex font-[600] leading-[24px] z-10 relative justify-center group" href="#">
-            <span className="text-[16px] text-white relative">Socure Unveils AI-Powered Global Watchlist Solution
+            <span className="text-[16px] max-md:text-[14px] text-white relative">Socure Unveils AI-Powered Global Watchlist Solution
               <span className="absolute top-[calc(50%-4px)] pl-[5px] group-hover:ml-[5px] transition-all duration-400"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 5H11M11 5L7.25 1.25M11 5L7.25 8.75" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg></span>
@@ -100,14 +100,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section className="banner tablet:bg-black bg-white">
+        <section className="banner tablet:bg-black bg-white py-[50px]">
           <div className="container">
-            <div className="wrapper flex desktop:flex-wrap">
-              <div className="col-left w-1/2">
-                <span className="text-[16px] max-lg-[14px] text-[#FF6900] leading-[26px] font-[700] uppercase mb-[20px]">banking</span>
-                <h1 className="text-[#0A4264] text-[90px] max-2xl:text-[78px] max-xl:text-[66px] max-lg-[54px] max-md:text-[42px] max-sm:text-[30px] leading-[90px] normal-case mb-[20px]">Identify risk and approve more customers</h1>
+            <div className="wrapper min-lg:flex min-lg:flex-wrap block">
+              <div className="col-left min-lg:w-1/2 w-full">
+                <span className="text-[16px] max-lg-[14px] text-[#FF6900]  font-[700] uppercase mb-[20px]">banking</span>
+                <h1 className="text-[#0A4264] text-[90px] max-2xl:text-[78px] max-xl:text-[66px] max-lg:text-[54px] max-md:text-[42px] max-sm:text-[30px]  normal-case mb-[20px]">Identify risk and approve more customers</h1>
                 <p className="text-[20px] max-lg-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px] mb-[30px]">Power a seamless customer experience and confident compliance with AI-driven identity verification and fraud prevention solutions that deliver unmatched accuracy.</p>
-                <div className="btn-wrap flex flex-wrap items-center max-xl:hidden">
+                <div className="btn-wrap flex flex-wrap items-center">
                   <div className="btn-transparent">
                     <Link className="text-[#0A4264] bg-[#FF6900] text-[16px] max-2xl:text-[14px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] max-2xl:py-[12px] px-[20px] max-2xl:px-[15px] rounded-[24.5px] border-[1.5px]  hover:bg-[#d76826] border-[#FF6900] hover:border-[#d76826]" href="#"><span>Talk to an Expert</span></Link>
                   </div>
@@ -115,7 +115,7 @@ export default function Home() {
                     <Link className="text-[#0A4264]  bg-white text-[16px] max-2xl:text-[14px] font-[600] inline-block transition-all ease-in-out duration-300 py-[15px] max-2xl:py-[12px] px-[20px] max-2xl:px-[15px] rounded-[24.5px] border-[1.5px] ml-[10px]  hover:text-[#FF6900]" href="#"><span>Get a Demo</span></Link>
                   </div>
                 </div>
-                <div className="logo-wrapper flex flex-wrap mt-[100px] mb-[50px] align-middle">
+                <div className="logo-wrapper flex flex-wrap min-lg:mt-[100px] mt-[20px] min-lg:mb-[50px] mb-[20px] align-middle">
                   <div className="icon-wrap">
                     <Image className="w-[155px] h-[87px]"
                       src="/Betterment.png"
@@ -142,7 +142,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-right w-1/2">
+              <div className="col-right min-lg:w-1/2 w-full">
                 <div className="icon-wrap">
                   <Image className="w-[630px] object-contain"
                     src="/banner-img.png"
@@ -366,7 +366,7 @@ export default function Home() {
               </div>
               <div className="col-right w-1/2">
                 <div className="wrapper">
-                  <div className="item group border-[#E5EAEB] border-b-[1px] py-[30px]">
+                  <div className="item group border-[#E5EAEB] border-b-[1px] py-[30px] group-hover:border-[#FF6900]">
                     <Link href="#">
                       <div className="wrapper flex flex-wrap">
                         <div className="img-wrap w-[90px]">
@@ -884,9 +884,24 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="footer-nav bg-[#0A4264]">
+        <section className="footer-nav bg-[#0A4264] py-[20px]">
           <div className="container">
-
+            <div className="wrapper flex flex-wrap align-middle justify-between">
+              <div className="col-left">
+                <p className="text-white text-[13px] leading-[130%] font-[400]">© Copyright 2024 Socure. All rights reserved.</p>
+              </div>
+              <div className="col-mid">
+                <p className="text-white text-[13px] leading-[130%] font-[400]">885 Tahoe Blvd., Suite 1, Incline Village, Nevada 89451, US</p>
+              </div>
+              <div className="col-right">
+                <ul className="flex flex-wrap align-middle">
+                  <li className="mr-[10px]"><Link href="" className="text-white text-[13px] leading-[130%] font-[400] hover:underline border-r-[1px] border-white pr-[10px]">Do Not Share My Personal Information</Link></li>
+                  <li className="mr-[10px]"><Link href="" className="text-white text-[13px] leading-[130%] font-[400] hover:underline border-r-[1px] border-white pr-[10px]">Privacy</Link></li>
+                  <li className="mr-[10px]"><Link href="" className="text-white text-[13px] leading-[130%] font-[400] hover:underline border-r-[1px] border-white pr-[10px]">Terms</Link></li>
+                  <li><Link href="" className="text-white text-[13px] leading-[130%] font-[400] hover:underline">Code of Conduct</Link></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
       </main>
