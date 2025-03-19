@@ -168,28 +168,28 @@ export default function Home() {
           <div className="container">
             <div className="wrapper">
               <span className="text-[16px] max-lg-[14px] text-[#FF6900] leading-[26px] font-[700] uppercase mb-[20px] text-center w-full block">overview</span>
-              <p className="text-[20px] max-lg-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px] mb-[30px] max-w-[930px] text-center w-full mx-auto">Banks face mounting pressure from sophisticated fraud schemes and stricter regulations, while legacy verification systems create friction and security gaps.
+              <p className="text-[20px] max-lg-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px] max-lg:mb-[20px] mb-[30px] max-w-[930px] text-center w-full mx-auto">Banks face mounting pressure from sophisticated fraud schemes and stricter regulations, while legacy verification systems create friction and security gaps.
                 The rise of synthetic identities, account takeover attacks, and complex compliance requirements like sanctions screening demands a more sophisticated approach to risk management.</p>
               <div className="flex flex-wrap align-middle">
-                <div className="col-left w-1/4">
-                  <h4 className="text-[30px] text-[#0A4264] font-[600]">Opportunities</h4>
+                <div className="col-left w-1/4 max-lg:w-full max-lg:mb-[10px]">
+                  <h4 className="text-[30px] text-[#0A4264] max-lg:text-[27px] max-md:text-[24px] max-sm:text-[21px] font-[600]">Opportunities</h4>
                 </div>
-                <div className="col-right w-3/4">
-                  <p className="text-[20px] max-lg-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px]">Achieve rigorous compliance, outsmart sophisticated fraud, and streamline operations — all while delivering seamless, customer-centric experiences.</p>
+                <div className="col-right w-3/4 max-lg:w-full">
+                  <p className="text-[20px] max-lg-[18px] max-lg:text-[18px] max-sm:text-[16px] text-[#0A4264] font-[400] leading-[28px]">Achieve rigorous compliance, outsmart sophisticated fraud, and streamline operations — all while delivering seamless, customer-centric experiences.</p>
                 </div>
               </div>
-              <div className="statics-wrapper flex flex-wrap justify-between mt-[30px]">
-                <div className="text-center">
-                  <span className="block text-[90px] leading-[100%] text-[#FF6900] pb-[20px] border-b-[1px] border-[#9FA9AF] mx-[10px]">99%</span>
-                  <p className="block mt-[20px] text-[16px] leading-[26px] uppercase text-[#0A4264] font-[700]">verification of mainstream populations</p>
+              <div className="statics-wrapper flex flex-wrap justify-between max-lg:justify-around mt-[30px] max-lg:mt-[20px]">
+                <div className="text-center max-lg:mb-[20px]">
+                  <span className="block text-[90px] max-2xl:text-[80px] max-xl:text-[70px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] leading-[100%] text-[#FF6900] pb-[20px] border-b-[1px] border-[#9FA9AF] mx-[10px]">99%</span>
+                  <p className="block mt-[20px] text-[16px] leading-[26px] uppercase text-[#0A4264] font-[700] max-lg:text-[14px]">verification of mainstream populations</p>
                 </div>
-                <div className="text-center">
-                  <span className="block text-[90px] leading-[100%] text-[#FF6900] pb-[20px] border-b-[1px] border-[#9FA9AF] mx-[10px]">99%</span>
-                  <p className="block mt-[20px] text-[16px] leading-[26px] uppercase text-[#0A4264] font-[700]">verification of mainstream populations</p>
+                <div className="text-center max-lg:mb-[20px]">
+                  <span className="block text-[90px] max-2xl:text-[80px] max-xl:text-[70px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] leading-[100%] text-[#FF6900] pb-[20px] border-b-[1px] border-[#9FA9AF] mx-[10px]">99%</span>
+                  <p className="block mt-[20px] text-[16px] leading-[26px] uppercase text-[#0A4264] font-[700] max-lg:text-[14px]">verification of mainstream populations</p>
                 </div>
-                <div className="text-center">
-                  <span className="block text-[90px] leading-[100%] text-[#FF6900] pb-[20px] border-b-[1px] border-[#9FA9AF] mx-[10px]">99%</span>
-                  <p className="block mt-[20px] text-[16px] leading-[26px] uppercase text-[#0A4264] font-[700]">verification of mainstream populations</p>
+                <div className="text-center max-lg:mb-[20px]">
+                  <span className="block text-[90px] max-2xl:text-[80px] max-xl:text-[70px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] leading-[100%] text-[#FF6900] pb-[20px] border-b-[1px] border-[#9FA9AF] mx-[10px]">99%</span>
+                  <p className="block mt-[20px] text-[16px] leading-[26px] uppercase text-[#0A4264] font-[700] max-lg:text-[14px]">verification of mainstream populations</p>
                 </div>
               </div>
             </div>
@@ -895,9 +895,9 @@ export default function Home() {
               </div>
               <div className="col-right">
                 <ul className="flex flex-wrap align-middle">
-                  <li className="mr-[10px]"><Link href="" className="text-white text-[13px] leading-[130%] font-[400] hover:underline border-r-[1px] border-white pr-[10px]">Do Not Share My Personal Information</Link></li>
-                  <li className="mr-[10px]"><Link href="" className="text-white text-[13px] leading-[130%] font-[400] hover:underline border-r-[1px] border-white pr-[10px]">Privacy</Link></li>
-                  <li className="mr-[10px]"><Link href="" className="text-white text-[13px] leading-[130%] font-[400] hover:underline border-r-[1px] border-white pr-[10px]">Terms</Link></li>
+                  <li className="mr-[10px]"><Link href="#" className="text-white text-[13px] leading-[130%] font-[400] hover:underline border-r-[1px] border-white pr-[10px]">Do Not Share My Personal Information</Link></li>
+                  <li className="mr-[10px]"><Link href="#" className="text-white text-[13px] leading-[130%] font-[400] hover:underline border-r-[1px] border-white pr-[10px]">Privacy</Link></li>
+                  <li className="mr-[10px]"><Link href="#" className="text-white text-[13px] leading-[130%] font-[400] hover:underline border-r-[1px] border-white pr-[10px]">Terms</Link></li>
                   <li><Link href="" className="text-white text-[13px] leading-[130%] font-[400] hover:underline">Code of Conduct</Link></li>
                 </ul>
               </div>
